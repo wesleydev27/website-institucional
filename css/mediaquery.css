@@ -1,0 +1,3156 @@
+/*TELAS MENORES DE 280 A 320*/
+@media(min-width: 280px) and (max-width: 320px) {
+    * {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+        border: none !important;
+    }
+
+    /*TOPO*/
+    .topo {
+        display: none !important;
+    }
+
+    /*MODAL COOKIES*/
+
+    .cookies-msg {
+        width: 95%;
+        bottom: 2%;
+
+    }
+
+    /*ESTILIZA CAMPO TEXTO*/
+    .cookies-msg .cookies-txt {
+        display: flex;
+        flex-direction: column;
+        padding: 5px !important;
+    }
+
+    .cookies-msg p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    /*ESTILIZA BOTÃO*/
+    .cookies-msg .cookies-btn button {
+        padding: 10px !important;
+        font-size: 13px;
+        width: 280px;
+        margin: 20px !important;
+        cursor: pointer;
+    }
+
+    /*HEADER*/
+    header {
+        width: 100%;
+        height: 4rem !important;
+        z-index: 999 !important;
+    }
+
+    .logo-mobile img {
+        display: block;
+        height: 3rem;
+        left: 3rem;
+        position: relative !important;
+    }
+
+    /*LOGO*/
+    .logo img {
+        display: none !important;
+    }
+
+
+    /*ESCONDE ELEMENTOS DESKTOP*/
+    .menu {
+        display: none !important;
+    }
+
+    .btn-abrir-menu {
+        display: block;
+    }
+
+    /*BACKGROUND E POSICIONAMENTO MENU MOBILE*/
+    .menu-mobile {
+        background-color: var(--color2);
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 0%;
+        overflow: hidden;
+        overflow-y: auto;
+        transition: .2s;
+    }
+
+    /*ESPACAMENTO ENTRE ITENS */
+    .menu-mobile li {
+        margin-top: 30px !important;
+        padding: 2px 1px 6px 10px !important;
+    }
+
+    /*COR E TAMANHO DE FONTE*/
+    .menu-mobile ul li a {
+        color: var(--color1);
+        font-size: 1.5rem !important;
+    }
+
+
+    /*SOBRE NÓS*/
+    .content-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60vh;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../img/Sliders/Equipe.jpg');
+    }
+
+    /*POSICIONAMENTO DO H1 EM CIMA DO BACKGROUND*/
+    .content-about .about h1 {
+        color: var(--color3);
+        font-size: 3rem;
+        margin-top: 50px !important;
+    }
+
+    /*EFEITO OVERLAY NA IMAGEM SOBRE NÓS*/
+    .image-overlay-about {
+        position: absolute;
+        width: 100%;
+        height: 60vh;
+        background-color: #004166e3;
+        opacity: 0.8;
+        z-index: 0;
+    }
+
+    /*ESTRUTURA DE MARGENS DA PÁGINA SOBRE NÓS*/
+    .container-about {
+        background-color: var(--color3);
+        box-sizing: border-box;
+        width: 100% !important;
+    }
+
+
+    /*CORES E TAMANHO DO TITULO SOBRE NÓS*/
+    .container-about-internal h1 {
+        color: var(--color4);
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 1.8rem 0 0 !important;
+        font-family: 'Poppins', 'sans-serif';
+        font-weight: bold !important;
+    }
+
+    /* CORES TAMANHO E DISTANCIA ABAIXO DO TITULO SOBRE NÓS*/
+    .container-about .container-about-internal #cj,
+    p {
+        line-height: 2.5rem;
+        font-family: 'Poppins', 'sans-serif';
+        color: var(--color1);
+        font-size: 18px;
+        margin-top: 5px !important;
+        padding: 0.5rem !important;
+        text-align: center;
+    }
+
+    /*CORES E TAMANHO SUBTITULOS MISSÃO, VISÃO E VALORES*/
+    .container-about-internal h2 {
+        color: var(--color1);
+        font-size: 2.5rem !important;
+        text-align: center;
+        font-family: ' poppins', !important;
+        padding: 2rem 0 1rem !important;
+    }
+
+
+    /*CORES DISTANCIA E TAMANHO ABAIXO DOS SUBTITULOS MISSÃO, VISÃO E VALORES */
+    .container-about-internal,
+    p {
+        line-height: 2rem;
+        color: #7f7f7f;
+        font-family: 'Poppins', 'sans-serif';
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 0.5rem 0.2rem 0.5rem !important;
+
+    }
+
+    /* DESTAQUE EM AMARELO ABAIXO DOS SUBTITULOS*/
+    .container-about-internal .bold-cj {
+        color: var(--color4);
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    /*END SECTION SOBRE NÓS*/
+
+
+    /*CONTEÚDO DO SITE BANNER 01*/
+    .content {
+        width: 100% !important;
+        height: 100vh !important;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../img/Sliders/02.jpg');
+    }
+
+    /*EFEITO OVERLAY NA IMAGEM*/
+    .image-overlay {
+        position: absolute;
+        width: 100% !important;
+        height: 100vh !important;
+        background-color: var(--color1);
+        opacity: 0.6;
+    }
+
+    /*TITULO PRINCIPAL PRIMEIRO BANNER*/
+    .content h1 {
+        color: var(--color3);
+        position: absolute;
+        top: 40px !important;
+        font-size: 2rem !important;
+        text-align: center;
+        padding: 0.3rem !important;
+        /*ANIMAÇÃO*/
+        animation: slide 2s forwards;
+        /* Executa a animação uma vez */
+
+    }
+
+    /*CONTROLES DA ANIMAÇÃO*/
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateY(60px);
+        }
+    }
+
+    /*SUBTITULO PARAGRAFO ABAIXO DO TITULO*/
+    .content p {
+        color: var(--color3);
+        top: 57vh !important;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 2rem;
+        text-align: center;
+        z-index: 666;
+        padding: 0.5rem !important;
+        /*ANIMAÇÃO PARAGRAFO*/
+        animation: slide2 2s forwards;
+        /* Executa a animação uma vez */
+    }
+
+    /*CONTROLES DA ANIMAÇÃO PARA PARAGRAFO ABAIXO DO TITULO*/
+    @keyframes slide2 {
+        0% {
+            transform: translateY(40px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+
+    /*SECTION CONJUGAL*/
+    .content-two {
+        background-image: url("../img/Sliders/Conjugal.jpg");
+        background-position: center !important;
+        background-size: cover !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-two-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION CONJUGAL*/
+    .content-two-section h2 {
+        color: var(--color4);
+        font-size: 2.2rem !important;
+        padding: 1.5rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    /*TEXTO DA SECTION CONJUGAL*/
+    .content-two-section p {
+        color: var(--color2);
+        font-size: 1.2rem;
+        padding: 0.4em !important;
+        line-height: 1.8em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -15px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION CONJUGAL*/
+    .content-two-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+
+    /*SECTION EMPRESARIAL*/
+    .content-three {
+        background-image: url("../img/Sliders/Empresarial.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-three-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION EMPRESARIAL*/
+    .content-three-section h2 {
+        color: var(--color4);
+        font-size: 2.2rem !important;
+        padding: 1rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    /*TEXTO DA SECTION EMPRESARIAL*/
+    .content-three-section p {
+        color: var(--color2);
+        font-size: 1.2rem;
+        padding: 0.5rem !important;
+        line-height: 2em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -8px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION EMPRESARIAL*/
+    .content-three-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+
+
+    /*SECTION FAMILIAR*/
+    .content-four {
+        background-image: url("../img/Sliders/Familiar.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-four-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION FAMILIAR*/
+    .content-four-section h2 {
+        color: var(--color4);
+        font-size: 2.2rem !important;
+        padding: 1rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    /*TEXTO DA SECTION FAMILIAR*/
+    .content-four-section p {
+        color: var(--color2);
+        font-size: 1.2rem;
+        padding: 0.5rem !important;
+        line-height: 2em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -8px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION FAMILIAR*/
+    .content-four-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+
+    /*SECTION CONTRA INTELIGENCIA*/
+    .content-five {
+        background-image: url("../img/Sliders/Intelligence.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-five-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION CONTRA INTELIGENCIA*/
+    .content-five-section h2 {
+        color: var(--color4);
+        font-size: 2.2rem !important;
+        padding: 1rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    /*TEXTO DA SECTION CONTRA INTELIGENCIA*/
+    .content-five-section p {
+        color: var(--color2);
+        font-size: 1.2rem;
+        padding: 0.5rem !important;
+        line-height: 2em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -8px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION CONTRA INTELIGENCIAL*/
+    .content-five-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+
+    /*SECTION ADOLESCENTES*/
+    .content-six {
+        background-image: url("../img/Sliders/adolescent.jpg");
+        background-position-x: -300px !important;
+        background-size: cover !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-six-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION ADOLESCENTES*/
+    .content-six-section h2 {
+        color: var(--color4);
+        font-size: 2.1rem !important;
+        padding: 1rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    /*TEXTO DA SECTION ADOLESCENTES*/
+    .content-six-section p {
+        color: var(--color2);
+        font-size: 1.2rem;
+        padding: 0.5rem !important;
+        line-height: 2em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -8px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION ADOLESCENTES*/
+    .content-six-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+    /*TITULO DA SECTION SECTION CONTATO*/
+    .content-seven h2 {
+        margin-top: 20px !important;
+        font-size: 1.8rem;
+
+
+    }
+
+    /*CORPO DO FORMULÁRIO*/
+    .body-form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px !important;
+        padding: 5px 15px 0 15px !important;
+        width: 100%;
+
+    }
+
+    /*TEXTO ACIMA DOS INPUTS*/
+    label {
+        padding: 15px 0 0 5px !important;
+        margin: 5px 0 10px 2px !important;
+        display: inline-block;
+        color: var(--color2) !important;
+        font-size: 16px;
+        font-weight: 300 !important;
+    }
+
+    /*CAMPOS DE ENTRADA INPUTS*/
+    input[type="text"],
+    input[type="email"] {
+        width: 100% !important;
+        height: 50px !important;
+        font-size: 16px !important;
+    }
+
+
+    /*CUSTOMIZA O PLACEHOLDER NOS CAMPOS DE ENTRADA */
+    input[type="text"],
+    input[type="email"],
+    ::placeholder {
+        padding: 0px 0px 0px 5px !important;
+        font-weight: 400 !important;
+    }
+
+    /*CAMPO DE ENTRADA TEXTAREA*/
+    textarea {
+        width: 100%;
+        height: 100px !important;
+        background-color: var(--color1);
+        color: var(--color3);
+        font-size: 16px;
+        padding: 15px 0 0 15px;
+    }
+
+    /*CAMPO DE ENTRADA TEXTAREA*/
+    textarea {
+        padding: 10px 0 0 5px !important;
+    }
+
+    /* TRAVA CAMPO DE ENTRADA TEXTAREA*/
+    textarea {
+        resize: none !important;
+    }
+
+    /*CUSTOMIZA O BOTÃO ENVIAR*/
+    button[type="submit"] {
+        margin-top: 15px !important;
+
+    }
+
+    /*BACK TO UP VOLTA PAR CIMA*/
+    .backto-up {
+        background: var(--color5);
+        border-top: 3px solid var(--color4) !important;
+
+    }
+
+    /*FOOTER */
+    footer {
+        width: 100%;
+        height: 100%;
+        background-color: var(--color1);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    /*DIV LOGO FRASE E LINKS SOCIAIS*/
+    .logo-frase-social-icons {
+        width: 100%;
+        height: 300px;
+        padding: 40px !important;
+
+    }
+
+    /*DIV LOGO */
+    .logo-frase-social-icons img {
+        width: 150px;
+        padding: 20px 2px 1px 2px;
+    }
+
+    /*FRASE ABAIXO DA LOGO*/
+    .logo-frase-social-icons p {
+        padding: 8px;
+        margin-top: -1px !important;
+        font-size: 18px !important;
+        line-height: 20px;
+        font-size: 18px;
+        color: var(--color2);
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+
+    /*EFEITO HOVER FRASE ABAIXO DA LOGO*/
+    .logo-frase-social-icons p:hover {
+        color: var(--color2);
+        opacity: 0.9;
+        transition: .2s ease;
+    }
+
+    /*ICONES REDES SOCIAIS*/
+    .social-icons i {
+        color: var(--color4);
+        padding: 12px !important;
+        margin-top: 6px !important;
+        font-size: 25px;
+    }
+
+
+    /*EFEITO HOVER ICONES REDES SOCIAIS*/
+    .social-icons i:hover {
+        color: var(--color4);
+        opacity: 0.9;
+        transition: .2s ease;
+    }
+
+    /*FRASE ABAIXO DAS REDES SOCIAIS*/
+    #social-like {
+        color: var(--color2);
+        opacity: 0.5;
+        padding: 5px;
+        margin-top: -15px !important;
+        font-size: 10px !important;
+        letter-spacing: 1px;
+    }
+
+    /*EFEITO HOVER FRASE ABAIXO DAS REDES SOCIAIS*/
+    #social-like:hover {
+        color: var(--color2);
+        opacity: 0.9;
+        transition: .2s ease;
+
+    }
+
+    /*DIV NAVEGAÇÃO SERVIÇOS E FALE COM DETETIVE*/
+    .navegacao,
+    .nossos-servicos,
+    .fale-com-um-detetive {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        padding: 30px 0 !important;
+
+    }
+
+    /*DIV NAVEGAÇÃO SERVIÇOS E FALE COM DETETIVE TITULO H3*/
+    .navegacao,
+    .nossos-servicos,
+    .fale-com-um-detetive,
+    h3 {
+        color: var(--color3);
+        font-size: 25px;
+        opacity: 0.9 !important;
+
+    }
+
+
+    /*DIV NAVEGAÇÃO SERVIÇOS E FALE COM DETETIVE UL LI ESPACAMENTO*/
+    .navegacao,
+    .nossos-servicos,
+    .fale-com-um-detetive,
+    ul li {
+        padding: 12px 0 !important;
+    }
+
+    /*DIV NAVEGAÇÃO SERVIÇOS E FALE COM DETETIVE COR DOS LINKS A*/
+    .navegacao,
+    .nossos-servicos,
+    .fale-com-um-detetive,
+    a {
+        font-size: 15px;
+        color: var(--color2);
+        cursor: pointer;
+    }
+
+
+    /*DIV COPYRIGHT*/
+    .copyright {
+        grid-column: 1 / -1;
+        text-align: center !important;
+        width: 100%;
+        height: 65px;
+        background-color: var(--color5);
+    }
+
+    /*DIV COPYRIGHT P*/
+    .copyright p {
+        font-size: 12px;
+    }
+
+
+    /*TERMOS DE USO E SERVIÇO*/
+    .terms-of-service {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        bottom: 25px !important;
+        position: relative;
+    }
+
+    /*TERMOS DE USO E SERVIÇO P*/
+    .terms-of-service p {
+        padding: 0px 10px !important;
+        text-decoration: underline;
+    }
+
+    /*TERMOS DE USO E SERVIÇO A*/
+    .terms-of-service a {
+        font-size: 11px;
+    }
+
+    /*PÁGINA DE TERMOS DE USO*/
+    .terms {
+        width: 100%;
+        margin: 0 auto;
+        height: 530vh !important;
+        line-height: 35px;
+        padding: 5rem 1rem !important;
+        font-size: 16px;
+        color: #333;
+        font-weight: 400 !important;
+    }
+
+    .terms h1 {
+        text-align: center;
+        color: var(--color5);
+        padding: 0.5rem 0 !important;
+        font-size: 23px;
+    }
+
+    .terms .bold-cj {
+        color: var(--color5);
+        font-size: 20px;
+        display: block;
+    }
+
+
+
+
+
+}
+
+/*TELAS MAIORES DE 321 A 450*/
+@media(min-width: 321px) and (max-width: 450px) {
+    * {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+        border: none !important;
+    }
+
+    /*TOPO*/
+    .topo {
+        display: none !important;
+    }
+
+    /*MODAL COOKIES*/
+
+    .cookies-msg {
+        width: 95%;
+        bottom: 2%;
+
+    }
+
+    /*ESTILIZA CAMPO TEXTO*/
+    .cookies-msg .cookies-txt {
+        display: flex;
+        flex-direction: column;
+        padding: 5px !important;
+    }
+
+    .cookies-msg p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    /*ESTILIZA BOTÃO*/
+    .cookies-msg .cookies-btn button {
+        padding: 15px !important;
+        font-size: 15px;
+        width: 300px;
+        margin: 20px !important;
+        cursor: pointer;
+    }
+
+    /*HEADER*/
+    header {
+        z-index: 999 !important;
+    }
+
+
+
+    .logo-mobile img {
+        display: block;
+        height: 3rem;
+        left: 3rem;
+        position: relative !important;
+    }
+
+    /*LOGO*/
+    .logo img {
+        display: none !important;
+    }
+
+
+    /*ESCONDE ELEMENTOS DESKTOP*/
+    .menu {
+        display: none !important;
+    }
+
+    .btn-abrir-menu {
+        display: block;
+    }
+
+    /*BACKGROUND E POSICIONAMENTO MENU MOBILE*/
+    .menu-mobile {
+        background-color: var(--color2);
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 0%;
+        overflow: hidden;
+        overflow-y: auto;
+        transition: .2s;
+    }
+
+    /*ESPACAMENTO ENTRE ITENS */
+    .menu-mobile li {
+        margin-top: 30px !important;
+        padding: 2px 1px 6px 10px !important;
+    }
+
+    /*COR E TAMANHO DE FONTE*/
+    .menu-mobile ul li a {
+        color: var(--color1);
+        font-size: 1.5rem !important;
+    }
+
+
+    /*SOBRE NÓS*/
+    .content-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60vh;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../img/Sliders/Equipe.jpg');
+    }
+
+    /*POSICIONAMENTO DO H1 EM CIMA DO BACKGROUND*/
+    .content-about .about h1 {
+        color: var(--color3);
+        font-size: 3rem;
+        margin-top: 50px !important;
+    }
+
+    /*EFEITO OVERLAY NA IMAGEM SOBRE NÓS*/
+    .image-overlay-about {
+        position: absolute;
+        width: 100%;
+        height: 60vh;
+        background-color: #004166e3;
+        opacity: 0.8;
+        z-index: 0;
+    }
+
+    /*ESTRUTURA DE MARGENS DA PÁGINA SOBRE NÓS*/
+    .container-about {
+        background-color: var(--color3);
+        box-sizing: border-box;
+        width: 100% !important;
+    }
+
+
+    /*CORES E TAMANHO DO TITULO SOBRE NÓS*/
+    .container-about-internal h1 {
+        color: var(--color4);
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 1.8rem 0 0 !important;
+        font-family: 'Poppins', 'sans-serif';
+        font-weight: bold !important;
+    }
+
+    /* CORES TAMANHO E DISTANCIA ABAIXO DO TITULO SOBRE NÓS*/
+    .container-about .container-about-internal #cj,
+    p {
+        line-height: 2.5rem;
+        font-family: 'Poppins', 'sans-serif';
+        color: var(--color1);
+        font-size: 18px;
+        margin-top: 5px !important;
+        padding: 0.5rem !important;
+        text-align: center;
+    }
+
+    /*CORES E TAMANHO SUBTITULOS MISSÃO, VISÃO E VALORES*/
+    .container-about-internal h2 {
+        color: var(--color1);
+        font-size: 2.5rem !important;
+        text-align: center;
+        font-family: ' poppins', !important;
+        padding: 2rem 0 1rem !important;
+    }
+
+
+    /*CORES DISTANCIA E TAMANHO ABAIXO DOS SUBTITULOS MISSÃO, VISÃO E VALORES */
+    .container-about-internal,
+    p {
+        line-height: 2rem;
+        color: #7f7f7f;
+        font-family: 'Poppins', 'sans-serif';
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 0.5rem 0.2rem 0.5rem !important;
+
+    }
+
+    /* DESTAQUE EM AMARELO ABAIXO DOS SUBTITULOS*/
+    .container-about-internal .bold-cj {
+        color: var(--color4);
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    /*END SECTION SOBRE NÓS*/
+
+
+
+
+    /*CONTEÚDO DO SITE BANNER 01*/
+    .content {
+        width: 100% !important;
+        height: 83vh !important;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../img/Sliders/02.jpg');
+    }
+
+    /*EFEITO OVERLAY NA IMAGEM*/
+    .image-overlay {
+        position: absolute;
+        width: 100% !important;
+        height: 0 auto !important;
+        background-color: var(--color1);
+        opacity: 0.6;
+    }
+
+    /*TITULO PRINCIPAL PRIMEIRO BANNER*/
+    .content h1 {
+        color: var(--color3);
+        position: absolute;
+        top: 3.5vh !important;
+        font-size: 2.8rem !important;
+        text-align: center;
+        padding: 0.4rem !important;
+        /*ANIMAÇÃO*/
+        animation: slide 2s forwards;
+        /* Executa a animação uma vez */
+
+    }
+
+    /*CONTROLES DA ANIMAÇÃO*/
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateY(60px);
+        }
+    }
+
+    /*SUBTITULO PARAGRAFO ABAIXO DO TITULO*/
+    .content p {
+        color: var(--color3);
+        top: 65vh !important;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 1.8rem;
+        text-align: center;
+        z-index: 666;
+        padding: 0.5rem !important;
+        /*ANIMAÇÃO PARAGRAFO*/
+        animation: slide2 2s forwards;
+        /* Executa a animação uma vez */
+    }
+
+    /*CONTROLES DA ANIMAÇÃO PARA PARAGRAFO ABAIXO DO TITULO*/
+    @keyframes slide2 {
+        0% {
+            transform: translateY(40px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+
+    /*SECTION CONJUGAL*/
+    .content-two {
+        background-image: url("../img/Sliders/Conjugal.jpg");
+        background-position: center !important;
+        background-size: cover !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-two-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION CONJUGAL*/
+    .content-two-section h2 {
+        color: var(--color4);
+        font-size: 2.2rem !important;
+        padding: 1.5rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    /*TEXTO DA SECTION CONJUGAL*/
+    .content-two-section p {
+        color: var(--color2);
+        font-size: 1.2rem;
+        padding: 0.4em !important;
+        line-height: 1.8em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -15px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION CONJUGAL*/
+    .content-two-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+
+    /*SECTION EMPRESARIAL*/
+    .content-three {
+        background-image: url("../img/Sliders/Empresarial.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-three-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION EMPRESARIAL*/
+    .content-three-section h2 {
+        color: var(--color4);
+        font-size: 2.2rem !important;
+        padding: 1rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    /*TEXTO DA SECTION EMPRESARIAL*/
+    .content-three-section p {
+        color: var(--color2);
+        font-size: 1.2rem;
+        padding: 0.5rem !important;
+        line-height: 2em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -8px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION EMPRESARIAL*/
+    .content-three-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+    /*SECTION FAMILIAR*/
+    .content-four {
+        background-image: url("../img/Sliders/Familiar.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-four-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION FAMILIAR*/
+    .content-four-section h2 {
+        color: var(--color4);
+        font-size: 2.2rem !important;
+        padding: 1rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    /*TEXTO DA SECTION FAMILIAR*/
+    .content-four-section p {
+        color: var(--color2);
+        font-size: 1.2rem;
+        padding: 0.5rem !important;
+        line-height: 2em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -8px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION FAMILIAR*/
+    .content-four-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+    /*SECTION CONTRA INTELIGENCIA*/
+    .content-five {
+        background-image: url("../img/Sliders/Intelligence.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-five-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION CONTRA INTELIGENCIA*/
+    .content-five-section h2 {
+        color: var(--color4);
+        font-size: 2.2rem !important;
+        padding: 1rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    /*TEXTO DA SECTION CONTRA INTELIGENCIA*/
+    .content-five-section p {
+        color: var(--color2);
+        font-size: 1.2rem;
+        padding: 0.5rem !important;
+        line-height: 2em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -8px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION CONTRA INTELIGENCIAL*/
+    .content-five-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+    /*SECTION ADOLESCENTES*/
+    .content-six {
+        background-image: url("../img/Sliders/adolescent.jpg");
+        background-position-x: -300px !important;
+        background-size: cover !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-six-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION ADOLESCENTES*/
+    .content-six-section h2 {
+        color: var(--color4);
+        font-size: 2.1rem !important;
+        padding: 1rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    /*TEXTO DA SECTION ADOLESCENTES*/
+    .content-six-section p {
+        color: var(--color2);
+        font-size: 1.2rem;
+        padding: 0.5rem !important;
+        line-height: 2em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -8px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION ADOLESCENTES*/
+    .content-six-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+    /*SECTION CONTATO*/
+    .content-seven {
+        width: 100%;
+        height: 103vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 350px;
+        justify-content: center;
+
+    }
+
+    /*TITULO DA SECTION SECTION CONTATO*/
+    .content-seven h2 {
+        margin-top: 35px !important;
+        font-size: 1.8rem;
+
+
+    }
+
+    /*CORPO DO FORMULÁRIO*/
+    .body-form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px !important;
+        padding: 15px 15px 0 15px !important;
+        width: 100%;
+
+    }
+
+    /*TEXTO ACIMA DOS INPUTS*/
+    label {
+        padding: 15px 0 0 5px !important;
+        margin: 5px 0 10px 2px !important;
+        display: inline-block;
+        color: var(--color2) !important;
+        font-size: 16px;
+        font-weight: 300 !important;
+    }
+
+    /*CAMPOS DE ENTRADA INPUTS*/
+    input[type="text"],
+    input[type="email"] {
+        width: 100% !important;
+        height: 50px !important;
+        font-size: 16px !important;
+    }
+
+
+    /*CUSTOMIZA O PLACEHOLDER NOS CAMPOS DE ENTRADA */
+    input[type="text"],
+    input[type="email"],
+    ::placeholder {
+        padding: 0px 0px 0px 5px !important;
+        font-weight: 400 !important;
+    }
+
+    /*CAMPO DE ENTRADA TEXTAREA*/
+    textarea {
+        width: 100%;
+        height: 300px !important;
+        background-color: var(--color1);
+        color: var(--color3);
+        font-size: 16px;
+        padding: 15px 0 0 15px;
+    }
+
+    /*CAMPO DE ENTRADA TEXTAREA*/
+    textarea {
+        padding: 10px 0 0 5px !important;
+    }
+
+    /* TRAVA CAMPO DE ENTRADA TEXTAREA*/
+    textarea {
+        resize: none !important;
+    }
+
+    /*CUSTOMIZA O BOTÃO ENVIAR*/
+    button[type="submit"] {
+        margin-top: 15px !important;
+
+    }
+
+    /*BACK TO UP VOLTA PAR CIMA*/
+    .backto-up {
+        background: var(--color5);
+        border-top: 3px solid var(--color4) !important;
+
+    }
+
+    /*FOOTER */
+    footer {
+        width: 100%;
+        height: 100%;
+        background-color: var(--color1);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    /*DIV LOGO FRASE E LINKS SOCIAIS*/
+    .logo-frase-social-icons {
+        width: 100%;
+        height: 300px;
+        padding: 40px !important;
+
+    }
+
+    /*DIV LOGO */
+    .logo-frase-social-icons img {
+        width: 150px;
+        padding: 20px 2px 1px 2px;
+    }
+
+    /*FRASE ABAIXO DA LOGO*/
+    .logo-frase-social-icons p {
+        padding: 8px;
+        margin-top: -1px !important;
+        font-size: 18px !important;
+        line-height: 20px;
+        font-size: 18px;
+        color: var(--color2);
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+
+    /*EFEITO HOVER FRASE ABAIXO DA LOGO*/
+    .logo-frase-social-icons p:hover {
+        color: var(--color2);
+        opacity: 0.9;
+        transition: .2s ease;
+    }
+
+    /*ICONES REDES SOCIAIS*/
+    .social-icons i {
+        color: var(--color4);
+        padding: 12px !important;
+        margin-top: 6px !important;
+        font-size: 25px;
+    }
+
+
+    /*EFEITO HOVER ICONES REDES SOCIAIS*/
+    .social-icons i:hover {
+        color: var(--color4);
+        opacity: 0.9;
+        transition: .2s ease;
+    }
+
+    /*FRASE ABAIXO DAS REDES SOCIAIS*/
+    #social-like {
+        color: var(--color2);
+        opacity: 0.5;
+        padding: 5px;
+        margin-top: -15px !important;
+        font-size: 10px !important;
+        letter-spacing: 1px;
+    }
+
+    /*EFEITO HOVER FRASE ABAIXO DAS REDES SOCIAIS*/
+    #social-like:hover {
+        color: var(--color2);
+        opacity: 0.9;
+        transition: .2s ease;
+
+    }
+
+    /*DIV NAVEGAÇÃO SERVIÇOS E FALE COM DETETIVE*/
+    .navegacao,
+    .nossos-servicos,
+    .fale-com-um-detetive {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        padding: 30px 0 !important;
+
+    }
+
+    /*DIV NAVEGAÇÃO SERVIÇOS E FALE COM DETETIVE TITULO H3*/
+    .navegacao,
+    .nossos-servicos,
+    .fale-com-um-detetive,
+    h3 {
+        color: var(--color3);
+        font-size: 25px;
+        opacity: 0.9 !important;
+
+    }
+
+
+    /*DIV NAVEGAÇÃO SERVIÇOS E FALE COM DETETIVE UL LI ESPACAMENTO*/
+    .navegacao,
+    .nossos-servicos,
+    .fale-com-um-detetive,
+    ul li {
+        padding: 12px 0 !important;
+    }
+
+    /*DIV NAVEGAÇÃO SERVIÇOS E FALE COM DETETIVE COR DOS LINKS A*/
+    .navegacao,
+    .nossos-servicos,
+    .fale-com-um-detetive,
+    a {
+        font-size: 15px;
+        color: var(--color2);
+        cursor: pointer;
+    }
+
+
+
+    /*DIV COPYRIGHT*/
+    .copyright {
+        grid-column: 1 / -1;
+        text-align: center !important;
+        width: 100%;
+        height: 65px;
+        background-color: var(--color5);
+    }
+
+    /*DIV COPYRIGHT P*/
+    .copyright p {
+        font-size: 12px;
+    }
+
+    /*TERMOS DE USO E SERVIÇO*/
+    .terms-of-service {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto !important;
+        bottom: 25px !important;
+        position: relative;
+    }
+
+    /*TERMOS DE USO E SERVIÇO P*/
+    .terms-of-service p {
+        padding: 0px 10px !important;
+        text-decoration: underline;
+    }
+
+    /*TERMOS DE USO E SERVIÇO A*/
+    .terms-of-service a {
+        font-size: 11px;
+    }
+
+    /*PÁGINA DE TERMOS DE USO*/
+    .terms {
+        width: 100%;
+        margin: 0 auto;
+        height: auto !important;
+        line-height: 35px;
+        padding: 5rem 1rem !important;
+        font-size: 16px;
+        color: #333;
+        font-weight: 400 !important;
+    }
+
+    .terms h1 {
+        text-align: center;
+        color: var(--color5);
+        padding: 0.5rem 0 !important;
+        font-size: 23px;
+    }
+
+    .terms .bold-cj {
+        color: var(--color5);
+        font-size: 20px;
+        display: block;
+    }
+
+
+}
+
+
+/*TELAS TABLET DE 451 A 884*/
+@media(min-width: 451px) and (max-width: 884px) {
+    * {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+        border: none !important;
+    }
+
+    /*TOPO*/
+    .topo {
+        display: none !important;
+    }
+
+    /*MODAL COOKIES*/
+
+    .cookies-msg {
+        width: 97%;
+        bottom: 2%;
+
+    }
+
+    /*ESTILIZA CAMPO TEXTO*/
+    .cookies-msg .cookies-txt {
+        display: flex;
+        flex-direction: column;
+        padding: 1px !important;
+    }
+
+    .cookies-msg p {
+        font-size: 20px;
+        line-height: 35px !important;
+    }
+
+    /*ESTILIZA BOTÃO*/
+    .cookies-msg .cookies-btn button {
+        padding: 20px !important;
+        font-size: 18px;
+        width: 700px;
+        margin: 20px !important;
+        cursor: pointer;
+    }
+
+    /*HEADER*/
+    header {
+        z-index: 999 !important;
+    }
+
+
+    .logo-mobile img {
+        display: block;
+        height: 4rem;
+        left: 7rem;
+        position: relative !important;
+    }
+
+    /*LOGO*/
+    .logo img {
+        display: none !important;
+    }
+
+
+    /*ESCONDE ELEMENTOS DESKTOP*/
+    .menu {
+        display: none !important;
+    }
+
+    .btn-abrir-menu {
+        display: block;
+        font-size: 2rem !important;
+    }
+
+    /*BACKGROUND E POSICIONAMENTO MENU MOBILE*/
+    .menu-mobile {
+        background-color: var(--color2);
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999 !important;
+        width: 0%;
+        overflow: hidden;
+        overflow-y: auto;
+        transition: .2s;
+    }
+
+    /*ESPACAMENTO ENTRE ITENS */
+    .menu-mobile li {
+        margin-top: 30px !important;
+        padding: 42px 1px 6px 25px !important;
+    }
+
+    /*COR E TAMANHO DE FONTE*/
+    .menu-mobile ul li a {
+        color: var(--color1);
+        font-size: 2rem !important;
+    }
+
+    /*SOBRE NÓS*/
+    .content-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60vh;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../img/Sliders/Equipe.jpg');
+    }
+
+    /*POSICIONAMENTO DO H1 EM CIMA DO BACKGROUND*/
+    .content-about .about h1 {
+        color: var(--color3);
+        font-size: 5rem;
+        margin-top: 50px !important;
+    }
+
+    /*EFEITO OVERLAY NA IMAGEM SOBRE NÓS*/
+    .image-overlay-about {
+        position: absolute;
+        width: 100%;
+        height: 60vh;
+        background-color: #004166e3;
+        opacity: 0.8;
+        z-index: 0;
+    }
+
+    /*ESTRUTURA DE MARGENS DA PÁGINA SOBRE NÓS*/
+    .container-about {
+        background-color: var(--color3);
+        box-sizing: border-box;
+        width: 100% !important;
+    }
+
+
+    /*CORES E TAMANHO DO TITULO SOBRE NÓS*/
+    .container-about-internal h1 {
+        color: var(--color4);
+        font-size: 3.8rem !important;
+        padding: 2rem 0 0.8rem !important;
+        font-family: 'Poppins', 'sans-serif';
+        font-weight: bold !important;
+    }
+
+    /* CORES TAMANHO E DISTANCIA ABAIXO DO TITULO SOBRE NÓS*/
+    .container-about-internal p {
+        line-height: 2.7rem !important;
+        font-family: 'Poppins', 'sans-serif';
+        color: #7f7f7f;
+        font-size: 1.6rem !important;
+        margin-top: 5px !important;
+        padding: 0.5rem !important;
+    }
+
+    /*CORES E TAMANHO SUBTITULOS MISSÃO, VISÃO E VALORES*/
+    .container-about-internal h2 {
+        color: var(--color1);
+        font-size: 3.8rem !important;
+        text-align: center;
+        font-family: ' poppins', !important;
+        padding: 1rem 0 1rem !important;
+    }
+
+
+    /*CORES DISTANCIA E TAMANHO ABAIXO DOS SUBTITULOS MISSÃO, VISÃO E VALORES */
+    .container-about-internal,
+    p {
+        line-height: 2rem;
+        color: #7f7f7f;
+        font-family: 'Poppins', 'sans-serif';
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 2rem 0.9rem !important;
+        line-height: 2.7rem !important;
+
+    }
+
+    /* DESTAQUE EM AMARELO ABAIXO DOS SUBTITULOS*/
+    .container-about-internal .bold-cj {
+        color: var(--color4);
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    /*END SECTION SOBRE NÓS*/
+
+
+    /*CONTEÚDO DO SITE BANNER 01*/
+    .content {
+        width: 100% !important;
+        height: 95vh !important;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../img/Sliders/02.jpg');
+    }
+
+    /*EFEITO OVERLAY NA IMAGEM*/
+    .image-overlay {
+        position: absolute;
+        width: 100% !important;
+        height: 95vh !important;
+        background-color: var(--color1);
+        opacity: 0.6;
+    }
+
+    /*TITULO PRINCIPAL PRIMEIRO BANNER*/
+    .content h1 {
+        color: var(--color3);
+        position: absolute;
+        top: 14vh !important;
+        font-size: 3.8rem !important;
+        text-align: center;
+        padding: 0.5rem !important;
+        /*ANIMAÇÃO*/
+        animation: slide 2s forwards;
+        /* Executa a animação uma vez */
+
+    }
+
+    /*CONTROLES DA ANIMAÇÃO*/
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateY(60px);
+        }
+    }
+
+    /*SUBTITULO PARAGRAFO ABAIXO DO TITULO*/
+    .content p {
+        color: var(--color3);
+        top: 55vh !important;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 3.5rem;
+        line-height: 3.5rem !important;
+        padding: 0.9rem 0 !important;
+        /*ANIMAÇÃO PARAGRAFO*/
+        animation: slide2 2s forwards;
+        /* Executa a animação uma vez */
+    }
+
+    /*CONTROLES DA ANIMAÇÃO PARA PARAGRAFO ABAIXO DO TITULO*/
+    @keyframes slide2 {
+        0% {
+            transform: translateY(40px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+
+    /*SECTION CONJUGAL*/
+    .content-two {
+        background-image: url("../img/Sliders/Conjugal.jpg");
+        background-position: center !important;
+        background-size: cover !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-two-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION CONJUGAL*/
+    .content-two-section h2 {
+        color: var(--color4);
+        font-size: 4rem !important;
+        padding: 3rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    /*TEXTO DA SECTION CONJUGAL*/
+    .content-two-section p {
+        color: var(--color2);
+        font-size: 2rem;
+        padding: 1rem !important;
+        text-align: center;
+        line-height: 1.8em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -15px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION CONJUGAL*/
+    .content-two-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+
+    /*SECTION EMPRESARIAL*/
+    .content-three {
+        background-image: url("../img/Sliders/Empresarial.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-three-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION EMPRESARIAL*/
+    .content-three-section h2 {
+        color: var(--color4);
+        font-size: 4rem !important;
+        padding: 3rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    /*TEXTO DA SECTION EMPRESARIAL*/
+    .content-three-section p {
+        color: var(--color2);
+        font-size: 2rem;
+        padding: 1rem !important;
+        text-align: center;
+        line-height: 1.8em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -15px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION EMPRESARIAL*/
+    .content-three-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+    /*SECTION FAMILIAR*/
+    .content-four {
+        background-image: url("../img/Sliders/Familiar.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-four-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION FAMILIAR*/
+    .content-four-section h2 {
+        color: var(--color4);
+        font-size: 4rem !important;
+        padding: 3rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    /*TEXTO DA SECTION FAMILIAR*/
+    .content-four-section p {
+        color: var(--color2);
+        font-size: 2rem;
+        padding: 1rem !important;
+        line-height: 1.8em;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -15px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION FAMILIAR*/
+    .content-four-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+    /*SECTION CONTRA INTELIGENCIA*/
+    .content-five {
+        background-image: url("../img/Sliders/Intelligence.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-five-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION CONTRA INTELIGENCIA*/
+    .content-five-section h2 {
+        color: var(--color4);
+        font-size: 4rem !important;
+        padding: 3rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    /*TEXTO DA SECTION CONTRA INTELIGENCIA*/
+    .content-five-section p {
+        color: var(--color2);
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem !important;
+        line-height: 1.8em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -8px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION CONTRA INTELIGENCIA*/
+    .content-five-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+    /*SECTION ADOLESCENTES*/
+    .content-six {
+        background-image: url("../img/Sliders/adolescent.jpg");
+        background-position-x: -300px !important;
+        background-size: cover !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-six-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION ADOLESCENTES*/
+    .content-six-section h2 {
+        color: var(--color4);
+        font-size: 4rem !important;
+        padding: 3rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    /*TEXTO DA SECTION ADOLESCENTES*/
+    .content-six-section p {
+        color: var(--color2);
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem !important;
+        line-height: 1.8em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -15px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION ADOLESCENTES*/
+    .content-six-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+    /*SECTION CONTATO*/
+
+    .content-seven {
+        width: 100%;
+        height: 88vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 350px;
+        justify-content: center;
+
+    }
+
+    /*TITULO DA SECTION SECTION CONTATO*/
+    .content-seven h2 {
+        margin-top: 35px !important;
+        font-size: 3rem;
+
+
+    }
+
+    /*CORPO DO FORMULÁRIO*/
+    .body-form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 55px !important;
+        padding: 15px 15px 0 15px !important;
+        width: 100%;
+
+    }
+
+    /*TEXTO ACIMA DOS INPUTS*/
+    label {
+        padding: 15px 0 0 5px !important;
+        margin: 5px 0 10px 2px !important;
+        display: inline-block;
+        color: var(--color2) !important;
+        font-size: 18px !important;
+        font-weight: 300 !important;
+    }
+
+    /*CAMPOS DE ENTRADA INPUTS*/
+    input[type="text"],
+    input[type="email"] {
+        width: 100% !important;
+        height: 50px !important;
+        font-size: 18px !important;
+    }
+
+
+    /*CUSTOMIZA O PLACEHOLDER NOS CAMPOS DE ENTRADA */
+    input[type="text"],
+    input[type="email"],
+    ::placeholder {
+        padding: 0px 0px 0px 5px !important;
+        font-weight: 400 !important;
+    }
+
+    /*CAMPO DE ENTRADA TEXTAREA*/
+    textarea {
+        width: 100%;
+        height: 300px !important;
+        background-color: var(--color1);
+        color: var(--color3);
+        font-size: 16px;
+        padding: 15px 0 0 15px;
+    }
+
+    /*CAMPO DE ENTRADA TEXTAREA*/
+    textarea {
+        padding: 10px 0 0 5px !important;
+    }
+
+    /* TRAVA CAMPO DE ENTRADA TEXTAREA*/
+    textarea {
+        resize: none !important;
+    }
+
+    /*CUSTOMIZA O BOTÃO ENVIAR*/
+    button[type="submit"] {
+        margin-top: 15px !important;
+
+    }
+
+    /*BACK TO UP VOLTA PAR CIMA*/
+    .backto-up {
+        background: var(--color5);
+        border-top: 3px solid var(--color4) !important;
+
+    }
+
+    /*FOOTER */
+    footer {
+        width: 100%;
+        height: 100%;
+        background-color: var(--color1);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    /*DIV LOGO FRASE E LINKS SOCIAIS*/
+    .logo-frase-social-icons {
+        width: 100%;
+        height: 300px;
+        padding: 45px !important;
+
+    }
+
+    /*DIV LOGO */
+    .logo-frase-social-icons img {
+        width: 150px;
+        padding: 20px 2px 1px 2px;
+    }
+
+    /*FRASE ABAIXO DA LOGO*/
+    .logo-frase-social-icons p {
+        padding: 8px;
+        margin-top: -25px !important;
+        font-size: 18px !important;
+        line-height: 18px !important;
+        font-size: 18px;
+        color: var(--color2);
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+
+    /*EFEITO HOVER FRASE ABAIXO DA LOGO*/
+    .logo-frase-social-icons p:hover {
+        color: var(--color2);
+        opacity: 0.9;
+        transition: .2s ease;
+    }
+
+    /*ICONES REDES SOCIAIS*/
+    .social-icons i {
+        color: var(--color4);
+        padding: 10px !important;
+        margin-top: -25px !important;
+        font-size: 25px;
+    }
+
+
+    /*EFEITO HOVER ICONES REDES SOCIAIS*/
+    .social-icons i:hover {
+        color: var(--color4);
+        opacity: 0.9;
+        transition: .2s ease;
+    }
+
+    /*FRASE ABAIXO DAS REDES SOCIAIS*/
+    #social-like {
+        color: var(--color2);
+        opacity: 0.5;
+        padding: 5px;
+        margin-top: -15px !important;
+        font-size: 15px !important;
+        letter-spacing: 1px;
+    }
+
+    /*EFEITO HOVER FRASE ABAIXO DAS REDES SOCIAIS*/
+    #social-like:hover {
+        color: var(--color2);
+        opacity: 0.9;
+        transition: .2s ease;
+
+    }
+
+    /*DIV NAVEGAÇÃO SERVIÇOS E FALE COM DETETIVE*/
+    .navegacao,
+    .nossos-servicos,
+    .fale-com-um-detetive {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        padding: 30px 0 !important;
+
+    }
+
+    /*DIV NAVEGAÇÃO SERVIÇOS E FALE COM DETETIVE TITULO H3*/
+    .navegacao,
+    .nossos-servicos,
+    .fale-com-um-detetive,
+    h3 {
+        color: var(--color3);
+        font-size: 25px !important;
+        opacity: 0.9 !important;
+
+    }
+
+
+    /*DIV NAVEGAÇÃO SERVIÇOS E FALE COM DETETIVE UL LI ESPACAMENTO*/
+    .navegacao,
+    .nossos-servicos,
+    .fale-com-um-detetive,
+    ul li {
+        padding: 10px 0 !important;
+    }
+
+    /*DESTAQUE COR EM AMARELO EMAIL RODAPÉ*/
+    #strongemail a {
+        font-size: 20px !important;
+        color: var(--color4);
+        opacity: 1;
+    }
+
+    #strongitememail {
+        position: relative;
+        top: -10px !important;
+    }
+
+    /*DESTAQUE EM COR AMARELO FALE NO WHATS RODAPÉ*/
+    #strongitemwhatsapp a {
+        font-size: 20px !important;
+        color: var(--color4);
+        opacity: 1;
+    }
+
+    #strongcliqueaqui {
+        position: relative;
+        top: -10px !important;
+    }
+
+    /*DIV NAVEGAÇÃO SERVIÇOS E FALE COM DETETIVE COR DOS LINKS A*/
+    .navegacao,
+    .nossos-servicos,
+    .fale-com-um-detetive,
+    a {
+        font-size: 18px !important;
+        color: var(--color2);
+        cursor: pointer;
+    }
+
+
+
+    /*DIV COPYRIGHT*/
+    .copyright {
+        grid-column: 1 / -1;
+        text-align: center !important;
+        width: 100%;
+        height: auto !important;
+        background-color: var(--color5);
+    }
+
+    /*DIV COPYRIGHT P*/
+    .copyright p {
+        font-size: 19px !important;
+    }
+
+
+    /*TERMOS DE USO E SERVIÇO*/
+    .terms-of-service {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto !important;
+        bottom: 25px !important;
+        position: relative;
+    }
+
+    /*TERMOS DE USO E SERVIÇO P*/
+    .terms-of-service p {
+        padding: 0px 10px !important;
+        text-decoration: underline;
+    }
+
+    /*TERMOS DE USO E SERVIÇO A*/
+    .terms-of-service a {
+        font-size: 13px !important;
+    }
+
+    /*PÁGINA DE TERMOS DE USO*/
+    .terms {
+        width: 100%;
+        margin: 0 auto;
+        height: auto !important;
+        line-height: 35px;
+        padding: 6rem 2rem !important;
+        font-size: 18px;
+        color: #333;
+        font-weight: 400 !important;
+    }
+
+    .terms h1 {
+        text-align: center;
+        color: var(--color5);
+        padding: 3rem 0 !important;
+        font-size: 35px;
+    }
+
+    .terms .bold-cj {
+        color: var(--color5);
+        font-size: 28px;
+        display: block;
+    }
+}
+
+/*TELAS TABLET DE 885 A 1280*/
+@media(min-width: 885px) and (max-width: 1300px) {
+    * {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+        border: none !important;
+    }
+
+
+
+    /*MODAL COOKIES*/
+
+    .cookies-msg {
+        width: 97%;
+        height: 300px;
+        bottom: 2%;
+
+    }
+
+    /*ESTILIZA CAMPO TEXTO*/
+    .cookies-msg .cookies-txt {
+        display: flex;
+        flex-direction: column;
+        padding: 1px !important;
+    }
+
+    .cookies-msg p {
+        font-size: 20px;
+        margin-top: 1px !important;
+        line-height: 35px !important;
+    }
+
+    /*ESTILIZA BOTÃO*/
+    .cookies-msg .cookies-btn button {
+        padding: 15px !important;
+        font-size: 18px;
+        width: 1000px;
+        margin: 10px !important;
+        cursor: pointer;
+    }
+
+    /*HEADER*/
+    header {
+        background-color: var(--color1);
+        position: fixed;
+        width: 100%;
+        height: 5rem;
+        margin-top: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px solid var(--color4) !important;
+        z-index: 9999;
+    }
+
+    /*ESCONDE LOGO MOBILE*/
+    .logo-mobile {
+        display: none;
+
+    }
+
+    /*MOSTRA LOGO DESKTOP*/
+    .logo img {
+        display: block !important;
+        width: 6rem;
+    }
+
+
+    /*COMEÇA A MOSTRAR ELEMENTOS DO MENU DESKTOP*/
+    .menu {
+        display: inline !important;
+    }
+
+    .menu a {
+        color: #F1F1F1 !important;
+    }
+
+    .menu ul li {
+        display: inline;
+        margin: 0 10px !important;
+        font-size: 16px;
+        font-weight: 700;
+
+    }
+
+    .menu a:hover {
+        border-bottom: 1px solid var(--color4) !important;
+        color: var(--color4) !important;
+    }
+
+    /*SUB MENU*/
+    .dropdow-menu {
+        visibility: hidden;
+        position: absolute !important;
+        background-color: #FFFFFF !important;
+        height: 240px !important;
+        right: 150px !important;
+        width: 500px !important;
+        padding: 10px 10px !important;
+        border-bottom: 5px solid #004066 !important;
+    }
+
+
+    .dropdow:hover .dropdow-menu {
+        visibility: visible !important;
+    }
+
+    .dropdow-menu a {
+        color: #004165 !important;
+        display: flex !important;
+        justify-content: left !important;
+        padding: 22px 1px 0 !important;
+        font-size: 16px !important;
+        font-weight: 800 !important;
+    }
+
+    .dropdow-menu a:hover {
+        border-bottom: none !important;
+        color: var(--color4) !important;
+        width: none !important;
+
+    }
+
+    .btn-abrir-menu {
+        display: none;
+        font-size: 3.2rem;
+    }
+
+    /*BACKGROUND E POSICIONAMENTO MENU MOBILE*/
+    .menu-mobile {
+        background-color: var(--color2);
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999 !important;
+        width: 0%;
+        overflow: hidden;
+        overflow-y: auto;
+        transition: .2s;
+    }
+
+    /*ESPACAMENTO ENTRE ITENS */
+    .menu-mobile li {
+        margin-top: 30px !important;
+        padding: 42px 1px 6px 25px !important;
+    }
+
+    /*COR E TAMANHO DE FONTE*/
+    .menu-mobile ul li a {
+        color: var(--color1);
+        font-size: 2rem !important;
+    }
+
+    /*SOBRE NÓS*/
+    .content-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60vh;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../img/Sliders/Equipe.jpg');
+    }
+
+    /*POSICIONAMENTO DO H1 EM CIMA DO BACKGROUND*/
+    .content-about .about h1 {
+        color: var(--color3);
+        font-size: 5rem;
+        margin-top: 50px !important;
+    }
+
+    /*EFEITO OVERLAY NA IMAGEM SOBRE NÓS*/
+    .image-overlay-about {
+        position: absolute;
+        width: 100%;
+        height: 60vh;
+        background-color: #004166e3;
+        opacity: 0.8;
+        z-index: 0;
+    }
+
+    /*ESTRUTURA DE MARGENS DA PÁGINA SOBRE NÓS*/
+    .container-about {
+        background-color: var(--color3);
+        box-sizing: border-box;
+        width: 100% !important;
+    }
+
+
+    /*CORES E TAMANHO DO TITULO SOBRE NÓS*/
+    .container-about-internal h1 {
+        color: var(--color4);
+        font-size: 3.8rem !important;
+        padding: 2rem 0 0.8rem !important;
+        font-family: 'Poppins', 'sans-serif';
+        font-weight: bold !important;
+    }
+
+    /* CORES TAMANHO E DISTANCIA ABAIXO DO TITULO SOBRE NÓS*/
+    .container-about-internal p {
+        line-height: 2.7rem !important;
+        font-family: 'Poppins', 'sans-serif';
+        color: #7f7f7f;
+        font-size: 1.6rem !important;
+        margin-top: 5px !important;
+        padding: 0.5rem !important;
+    }
+
+    /*CORES E TAMANHO SUBTITULOS MISSÃO, VISÃO E VALORES*/
+    .container-about-internal h2 {
+        color: var(--color1);
+        font-size: 3.8rem !important;
+        text-align: center;
+        font-family: ' poppins', !important;
+        padding: 1rem 0 1rem !important;
+    }
+
+
+    /*CORES DISTANCIA E TAMANHO ABAIXO DOS SUBTITULOS MISSÃO, VISÃO E VALORES */
+    .container-about-internal,
+    p {
+        line-height: 2rem;
+        color: #7f7f7f;
+        font-family: 'Poppins', 'sans-serif';
+        font-size: 1.6rem;
+        text-align: center;
+        padding: 2rem 0.9rem !important;
+        line-height: 2.7rem !important;
+
+    }
+
+    /* DESTAQUE EM AMARELO ABAIXO DOS SUBTITULOS*/
+    .container-about-internal .bold-cj {
+        color: var(--color4);
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    /*END SECTION SOBRE NÓS*/
+
+
+    /*CONTEÚDO DO SITE BANNER 01*/
+    .content {
+        width: 100% !important;
+        height: 95vh !important;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../img/Sliders/02.jpg');
+    }
+
+    /*EFEITO OVERLAY NA IMAGEM*/
+    .image-overlay {
+        position: absolute;
+        width: 100% !important;
+        height: 95vh !important;
+        background-color: var(--color1);
+        opacity: 0.6;
+    }
+
+    /*TITULO PRINCIPAL PRIMEIRO BANNER*/
+    .content h1 {
+        color: var(--color3);
+        position: absolute;
+        top: 14vh !important;
+        font-size: 3.8rem !important;
+        text-align: center;
+        padding: 0.5rem !important;
+        /*ANIMAÇÃO*/
+        animation: slide 2s forwards;
+        /* Executa a animação uma vez */
+
+    }
+
+    /*CONTROLES DA ANIMAÇÃO*/
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateY(60px);
+        }
+    }
+
+    /*SUBTITULO PARAGRAFO ABAIXO DO TITULO*/
+    .content p {
+        color: var(--color3);
+        top: 58vh !important;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 4rem;
+        line-height: 4rem !important;
+        text-align: center;
+        z-index: 666;
+        padding: 0.9rem !important;
+        /*ANIMAÇÃO PARAGRAFO*/
+        animation: slide2 2s forwards;
+        /* Executa a animação uma vez */
+    }
+
+    /*CONTROLES DA ANIMAÇÃO PARA PARAGRAFO ABAIXO DO TITULO*/
+    @keyframes slide2 {
+        0% {
+            transform: translateY(40px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+
+    /*SECTION CONJUGAL*/
+    .content-two {
+        background-image: url("../img/Sliders/Conjugal.jpg");
+        background-position: center !important;
+        background-size: cover !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-two-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION CONJUGAL*/
+    .content-two-section h2 {
+        color: var(--color4);
+        font-size: 4rem !important;
+        padding: 3rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    /*TEXTO DA SECTION CONJUGAL*/
+    .content-two-section p {
+        color: var(--color2);
+        font-size: 2rem;
+        padding: 1rem !important;
+        text-align: center;
+        line-height: 1.8em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -15px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION CONJUGAL*/
+    .content-two-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+
+    /*SECTION EMPRESARIAL*/
+    .content-three {
+        background-image: url("../img/Sliders/Empresarial.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-three-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION EMPRESARIAL*/
+    .content-three-section h2 {
+        color: var(--color4);
+        font-size: 4rem !important;
+        padding: 3rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    /*TEXTO DA SECTION EMPRESARIAL*/
+    .content-three-section p {
+        color: var(--color2);
+        font-size: 2rem;
+        padding: 1rem !important;
+        text-align: center;
+        line-height: 1.8em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -15px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION EMPRESARIAL*/
+    .content-three-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+    /*SECTION FAMILIAR*/
+    .content-four {
+        background-image: url("../img/Sliders/Familiar.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-four-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION FAMILIAR*/
+    .content-four-section h2 {
+        color: var(--color4);
+        font-size: 4rem !important;
+        padding: 3rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    /*TEXTO DA SECTION FAMILIAR*/
+    .content-four-section p {
+        color: var(--color2);
+        font-size: 2rem;
+        padding: 1rem !important;
+        line-height: 1.8em;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -15px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION FAMILIAR*/
+    .content-four-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+    /*SECTION CONTRA INTELIGENCIA*/
+    .content-five {
+        background-image: url("../img/Sliders/Intelligence.jpg");
+        background-position: center;
+        background-size: cover;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-five-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION CONTRA INTELIGENCIA*/
+    .content-five-section h2 {
+        color: var(--color4);
+        font-size: 4rem !important;
+        padding: 3rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    /*TEXTO DA SECTION CONTRA INTELIGENCIA*/
+    .content-five-section p {
+        color: var(--color2);
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem !important;
+        line-height: 1.8em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -8px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION CONTRA INTELIGENCIA*/
+    .content-five-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+    /*SECTION ADOLESCENTES*/
+    .content-six {
+        background-image: url("../img/Sliders/adolescent.jpg");
+        background-position-x: -300px !important;
+        background-size: cover !important;
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    /*DIV CORPO EM AZUL*/
+    .content-six-section {
+        background-color: #004166d6;
+        width: 100% !important;
+        height: auto;
+        padding: 1.2rem;
+    }
+
+    /*TITULO DA SECTION ADOLESCENTES*/
+    .content-six-section h2 {
+        color: var(--color4);
+        font-size: 4rem !important;
+        padding: 3rem !important;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    /*TEXTO DA SECTION ADOLESCENTES*/
+    .content-six-section p {
+        color: var(--color2);
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem !important;
+        line-height: 1.8em;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        margin-top: -15px !important;
+    }
+
+    /*DESTAQUE NO TEXTO DA SECTION ADOLESCENTES*/
+    .content-six-section .bold-cj,
+    #cj p {
+        font-weight: bold;
+        color: #EDA207;
+    }
+
+    /*SECTION CONTATO*/
+
+    .content-seven {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 350px;
+        justify-content: center;
+
+    }
+
+    /*TITULO DA SECTION SECTION CONTATO*/
+    .content-seven h2 {
+        margin-top: 30px !important;
+        font-size: 3rem !important;
+
+
+    }
+
+    /*CORPO DO FORMULÁRIO*/
+    .body-form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px !important;
+        padding: 5px 15px 0 15px !important;
+        width: 100%;
+
+    }
+
+    /*TEXTO ACIMA DOS INPUTS*/
+    label {
+        padding: 15px 0 0 5px !important;
+        margin: 5px 0 10px 2px !important;
+        display: inline-block;
+        color: var(--color2) !important;
+        font-size: 16px;
+        font-weight: 300 !important;
+    }
+
+    /*CAMPOS DE ENTRADA INPUTS*/
+    input[type="text"],
+    input[type="email"] {
+        width: 100% !important;
+        height: 50px !important;
+        font-size: 16px !important;
+    }
+
+
+    /*CUSTOMIZA O PLACEHOLDER NOS CAMPOS DE ENTRADA */
+    input[type="text"],
+    input[type="email"],
+    ::placeholder {
+        padding: 0px 0px 0px 5px !important;
+        font-weight: 400 !important;
+    }
+
+    /*CAMPO DE ENTRADA TEXTAREA*/
+    textarea {
+        width: 100%;
+        height: 100px !important;
+        background-color: var(--color1);
+        color: var(--color3);
+        font-size: 16px;
+        padding: 15px 0 0 15px;
+    }
+
+    /*CAMPO DE ENTRADA TEXTAREA*/
+    textarea {
+        padding: 10px 0 0 5px !important;
+    }
+
+    /* TRAVA CAMPO DE ENTRADA TEXTAREA*/
+    textarea {
+        resize: none !important;
+    }
+
+    /*CUSTOMIZA O BOTÃO ENVIAR*/
+    input[type="submit"] {
+        margin-top: 15px !important;
+
+    }
+
+    /*BACK TO UP VOLTA PAR CIMA*/
+    .backto-up {
+        background: var(--color5);
+        border-top: 3px solid var(--color4) !important;
+
+    }
+
+    /*FOOTER */
+    footer {
+        width: 100%;
+        height: 100%;
+        background-color: var(--color1);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    /*DIV LOGO FRASE E LINKS SOCIAIS*/
+    .logo-frase-social-icons {
+        width: 100%;
+        height: 300px;
+        padding: 45px !important;
+
+    }
+
+    /*DIV LOGO */
+    .logo-frase-social-icons img {
+        width: 150px;
+        padding: 20px 2px 1px 2px;
+    }
+
+    /*FRASE ABAIXO DA LOGO*/
+    .logo-frase-social-icons p {
+        padding: 25px 0 15px 0 !important;
+        margin-top: -25px !important;
+        font-size: 18px !important;
+        line-height: 22px !important;
+        font-size: 16px;
+        color: var(--color2);
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+
+    /*EFEITO HOVER FRASE ABAIXO DA LOGO*/
+    .logo-frase-social-icons p:hover {
+        color: var(--color2);
+        opacity: 0.9;
+        transition: .2s ease;
+    }
+
+    /*ICONES REDES SOCIAIS*/
+    .social-icons i {
+        color: var(--color4);
+        padding: 5px !important;
+        margin-top: -25px !important;
+        font-size: 25px;
+    }
+
+
+    /*EFEITO HOVER ICONES REDES SOCIAIS*/
+    .social-icons i:hover {
+        color: var(--color4);
+        opacity: 0.9;
+        transition: .2s ease;
+    }
+
+    /*FRASE ABAIXO DAS REDES SOCIAIS*/
+    #social-like {
+        color: var(--color2);
+        opacity: 0.5;
+        padding: 5px;
+        margin-top: -15px !important;
+        font-size: 15px !important;
+        letter-spacing: 1px;
+    }
+
+    /*EFEITO HOVER FRASE ABAIXO DAS REDES SOCIAIS*/
+    #social-like:hover {
+        color: var(--color2);
+        opacity: 0.9;
+        transition: .2s ease;
+
+    }
+
+    /*DIV NAVEGAÇÃO SERVIÇOS E FALE COM DETETIVE*/
+    .navegacao,
+    .nossos-servicos,
+    .fale-com-um-detetive {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        padding: 30px 0 !important;
+
+    }
+
+    /*DIV NAVEGAÇÃO SERVIÇOS E FALE COM DETETIVE TITULO H3*/
+    .navegacao,
+    .nossos-servicos,
+    .fale-com-um-detetive,
+    h3 {
+        color: var(--color3);
+        font-size: 25px !important;
+        opacity: 0.9 !important;
+
+    }
+
+
+    /*DIV NAVEGAÇÃO SERVIÇOS E FALE COM DETETIVE UL LI ESPACAMENTO*/
+    .navegacao,
+    .nossos-servicos,
+    .fale-com-um-detetive,
+    ul li {
+        padding: 10px 0 !important;
+    }
+
+    /*DESTAQUE COR EM AMARELO EMAIL RODAPÉ*/
+    #strongemail a {
+        font-size: 20px !important;
+        color: var(--color4);
+        opacity: 1;
+    }
+
+    #strongitememail {
+        position: relative;
+        top: -10px !important;
+    }
+
+    /*DESTAQUE EM COR AMARELO FALE NO WHATS RODAPÉ*/
+    #strongitemwhatsapp a {
+        font-size: 20px !important;
+        color: var(--color4);
+        opacity: 1;
+    }
+
+    #strongcliqueaqui {
+        position: relative;
+        top: -10px !important;
+    }
+
+    /*DIV NAVEGAÇÃO SERVIÇOS E FALE COM DETETIVE COR DOS LINKS A*/
+    .navegacao,
+    .nossos-servicos,
+    .fale-com-um-detetive,
+    a {
+        font-size: 18px !important;
+        color: var(--color2);
+        cursor: pointer;
+    }
+
+
+    /*DIV COPYRIGHT*/
+    .copyright {
+        grid-column: 1 / -1;
+        text-align: center !important;
+        width: 100%;
+        height: auto !important;
+        background-color: var(--color5);
+    }
+
+    /*DIV COPYRIGHT P*/
+    .copyright p {
+        font-size: 19px !important;
+    }
+
+
+    /*TERMOS DE USO E SERVIÇO*/
+    .terms-of-service {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto !important;
+        bottom: 25px !important;
+        position: relative;
+    }
+
+    /*TERMOS DE USO E SERVIÇO P*/
+    .terms-of-service p {
+        padding: 0px 10px !important;
+        text-decoration: underline;
+    }
+
+    /*TERMOS DE USO E SERVIÇO A*/
+    .terms-of-service a {
+        font-size: 13px !important;
+    }
+
+    /*PÁGINA DE TERMOS DE USO*/
+    .terms {
+        width: 100%;
+        margin: 0 auto;
+        height: auto !important;
+        line-height: 35px;
+        padding: 6rem 2rem !important;
+        font-size: 18px;
+        color: #333;
+        font-weight: 400 !important;
+    }
+
+    .terms h1 {
+        text-align: center;
+        color: var(--color5);
+        padding: 3rem 0 !important;
+        font-size: 35px;
+    }
+
+    .terms .bold-cj {
+        color: var(--color5);
+        font-size: 28px;
+        display: block;
+    }
+
+
+
+}

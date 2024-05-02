@@ -1,0 +1,32 @@
+:root {
+    --font: 'Poppins';
+    --color1: #004066;
+    --color2: #F1F1F1;
+    --color3: #FFFFFF;
+    --color4: #EDA207;
+    --color5: #032c44;
+    --color6: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-family: var(--font);
+    background-color: var(--color1);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0 auto;
+    color: var(--color3);
+    padding: 10rem;
+}
+
+.logo-blog {
+    width: 10rem;
+
+}
